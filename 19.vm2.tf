@@ -29,7 +29,7 @@ resource "azurerm_virtual_machine" "web2" {
  os_profile_linux_config {
         disable_password_authentication = false
         ssh_keys {
-            path     = "/home/opsimath/.ssh/authorized_keys"
+            path     = "/home/user24/.ssh/authorized_keys"
             key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDshorz5jfon3B9NzBecbpjXl0SmRf/haN1vA+0go8WEzb/3EryXg9AG3Fup8X+x0QbBfs3KHIEpkTebQvhlNsphLfddSIPQtWJsH222F0EQjPgeiVJxfPtXD7Qg56RLrJq3DlmdyM0N/qPU7fwOXGs2OtNTdaIfj9y5VU8sXQPhyINEEPxifG6O3cCn/yszCDFZV33YjJcYv8FlSRfoDYt3V8Usznv7eBBtzr+ZOD3BVPGqf7fHBtH+ml0isOmIlxNT8Ackq/R0/er+APKB8C0wKe3ezkVcsyTQZbnjO7wIx0BKhGCyjwWHtQ7+9IVWp5t9okaFcAsfMGqcIWA1LyF4nyQzbwXOBm7ar5kHHSAL8OQaPIRxRgtvP/QTZdMghWo4kLdhuXD/PbJ4l1v3JwXQoO0DuGrXUibY2BfIMxlRF9YY/tMb7iT3WI7dpAN68Y+56byX8P7fsKIZBMuBqPzdJZW0CENAnOKrjn3t6pMlcHh3fZRpedCjiwhZ533P8E= user24@user24-vm"
         }
     }
