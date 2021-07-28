@@ -33,7 +33,7 @@ resource "azurerm_virtual_machine" "web1" {
             ## 서버 접근을 위해 관리 서버에서 생성한 id_rsa.pub 파일을 가상서버로 복사
             path     = "/home/user24/.ssh/authorized_keys"   ## 가상 서버에 복사되는 위치
 	    ## id_rsa.pub 파일 내용을 아래 key_data에 넣어줌 (무조건 한줄로!!!)
-            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDshorz5jfon3B9NzBecbpjXl0SmRf/haN1vA+0go8WEzb/3EryXg9AG3Fup8X+x0QbBfs3KHIEpkTebQvhlNsphLfddSIPQtWJsH222F0EQjPgeiVJxfPtXD7Qg56RLrJq3DlmdyM0N/qPU7fwOXGs2OtNTdaIfj9y5VU8sXQPhyINEEPxifG6O3cCn/yszCDFZV33YjJcYv8FlSRfoDYt3V8Usznv7eBBtzr+ZOD3BVPGqf7fHBtH+ml0isOmIlxNT8Ackq/R0/er+APKB8C0wKe3ezkVcsyTQZbnjO7wIx0BKhGCyjwWHtQ7+9IVWp5t9okaFcAsfMGqcIWA1LyF4nyQzbwXOBm7ar5kHHSAL8OQaPIRxRgtvP/QTZdMghWo4kLdhuXD/PbJ4l1v3JwXQoO0DuGrXUibY2BfIMxlRF9YY/tMb7iT3WI7dpAN68Y+56byX8P7fsKIZBMuBqPzdJZW0CENAnOKrjn3t6pMlcHh3fZRpedCjiwhZ533P8E= user24@user24-vm"
+            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC04C5MIViXpe2BVHqp4QfgzM61GkV/ZCJH3Y0SgiBaZpAYp3l2CzJvZ9TSdlC/0gTz7gBx/zRv9o6v+YoWwnmQinXuuele0c52vGkSKrdvPmvujZ+U9vWVdVWzH0QunUTRj9jghs2H478Gzodv+pThVO/XXQrmZlNqgwU1jeDT4DaHh8YNf7A2Vacl8eFJR/lb1NKao02b6pifw/Ri6JYgnL+38OCi1svRN6zwMLLf5ci81w5XckYcxmSoNPaZj5Z9UqtdT/h/yxjlhc9HWUOJa9dVadfQPHOoSKklmOU7yFBzoItXyMK1GIM7lct5gNQz4Z9M5UgwR0ko4jM94F0uY0SlKXcFXgQcTkmFr3VwD1HcsuOVqXHKLST0PDKiPApsglMIAIEIs0ZodMEGJ1E+GACAYziJAvazFLdrZkjCrKpryc+hH7sjCTNGRALWugtBUn6HQkchTndXMu0cxEQle1zrPDCt7klfz3LPXHxgFCaWK10QGvo6zr1UzRPvePYnsoyoyXcwFbJgAZ2dbG84dqCyJ//4rZQEO95iZdNoxDXUf1CV4S0ldPWRBECDmBycreSvqUgyYmAlbGlm5fTJtbSI0FVbOWEkd7x56wCupF55TA8TZMr5COugnP//TbdVsI8ebDfQS4JLW/dAF9jhx/TpCAdrm7xbhbhnX7/dgQ== user24@user24-vm-admin"
         }
     }
     boot_diagnostics {
